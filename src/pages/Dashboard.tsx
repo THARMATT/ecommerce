@@ -1,9 +1,13 @@
+import AdminSideBar from "../components/AdminSideBar"
 
 
 const Dashboard = () => {
   return (
-    <div>
-      dashboard
+    <div className="adminContainer">
+      <AdminSideBar/>
+      <main>
+        lorem1000
+      </main>
     </div>
   )
 }

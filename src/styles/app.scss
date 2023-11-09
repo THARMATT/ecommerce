@@ -1,4 +1,4 @@
-@use "mixin" ;   
+@import "mixin" ;   
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -21,4 +21,28 @@
   }
   .green{
     color: rgb(4, 217, 4);
+  }
+  .adminContainer{
+   @include grid(1fr 4fr ,2rem);
+   height:100vh;
+   background-color: rgb(247 247 247);
+>aside{
+width: 100%;
+background-color: white;
+padding: 1rem;
+z-index:10;
+overflow-y:auto;
+&::-webkit-scrollbar{
+  display: none;
+}
+}
+>main{
+  width: 100%;
+padding: 1rem;
+z-index:10;
+overflow-y:auto;
+&::-webkit-scrollbar{
+  display: none;
+}
+}
   }
